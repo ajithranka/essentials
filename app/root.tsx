@@ -1,3 +1,4 @@
+import { LinksFunction } from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -6,6 +7,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react'
+
+import styles from '~/styles/main.css'
+
+export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }]
 
 export default function Root() {
   return (
@@ -16,7 +21,7 @@ export default function Root() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="dark">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
