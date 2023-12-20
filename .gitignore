@@ -1,6 +1,14 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependencies
 node_modules
 
+# Remix
 /.cache
 /build
 /public/build
+
+# Environment variables
 .env
