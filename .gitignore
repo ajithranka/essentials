@@ -5,6 +5,11 @@ Thumbs.db
 # Dependencies
 node_modules
 
+# Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
 # Remix
 /.cache
 /build

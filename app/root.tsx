@@ -5,7 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react'
 
 export default function Root() {
   return (
@@ -23,5 +23,5 @@ export default function Root() {
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }
