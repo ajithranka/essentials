@@ -3,9 +3,9 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
 
-    "prisma.prisma",
-
     "csstools.postcss",
-    "bradlc.vscode-tailwindcss"
+    "bradlc.vscode-tailwindcss",
+
+    "prisma.prisma"
   ]
 }

@@ -21,7 +21,7 @@ export default function Root() {
         <Meta />
         <Links />
       </head>
-      <body className="dark">
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
