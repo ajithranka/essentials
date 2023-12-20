@@ -1,5 +1,4 @@
 {
-  "name": "essentials",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -7,21 +6,24 @@
     "build": "remix build",
     "dev": "remix dev --manual",
     "format": "prettier --write .",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@prisma/client": "^5.7.1",
     "@remix-run/node": "^2.4.0",
     "@remix-run/react": "^2.4.0",
     "@remix-run/serve": "^2.4.0",
+    "bcryptjs": "^2.4.3",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.4.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
@@ -34,9 +36,14 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "3.1.1",
+    "prisma": "^5.7.1",
+    "tsx": "^4.7.0",
     "typescript": "^5.1.6"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   }
 }
