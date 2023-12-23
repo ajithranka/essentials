@@ -5,6 +5,9 @@ const colors = toTailwind(tokens, 'color')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./app/**/*.{ts,tsx}'],
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     colors: {
       transparent: 'transparent',
