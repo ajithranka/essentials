@@ -1,38 +1,44 @@
-# Welcome to Remix!
+# Essentials
 
-- [Remix Docs](https://remix.run/docs)
+## Setup
+
+Use the node version specified in the `.nvmrc` file. If you have Node Version Manager installed, detect and use the correct node version by running,
+
+```sh
+nvm use
+```
+
+Install dependencies
+
+```sh
+npm install
+```
+
+Copy the `.env.example` file to `.env` and edit environment variables.
+
+```sh
+cp .env.example .env
+```
+
+Set up the database
+
+```sh
+npx prisma db seed
+```
+
+If you are using VS Code, recommended extensions and settings are listed in the [`.vscode`](.vscode) folder.
 
 ## Development
 
-From your terminal:
+| Command          | Action                         |
+| :--------------- | :----------------------------- |
+| `npm run dev`    | Starts local dev server        |
+| `npm run lint`   | Lint and fix files with ESLint |
+| `npm run format` | Format files with Prettier     |
 
-```sh
-npm run dev
-```
+## Production
 
-This starts your app in development mode, rebuilding assets on file changes.
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+| Command         | Action                      |
+| :-------------- | :-------------------------- |
+| `npm run build` | Build your production site  |
+| `npm run start` | Start the production server |
